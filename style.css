@@ -1,5 +1,6 @@
 * {
     font-family: 'Assistant', sans-serif;
+	direction: rtl; 
 }
 
 hr {
@@ -28,6 +29,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+	direction: ltr;
     box-sizing: border-box;
 	border-bottom: 4px solid #726d6d;
 }
@@ -96,7 +98,6 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 40px 20px;
-    direction: rtl; 
 }
 
 
@@ -121,6 +122,30 @@ body {
 	object-fit: cover;
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  #playlist {
+	max-width: 90%;
+	text-align: center;
+	margin: 40px;
+	gap: 100px;
+  }
+  #songs {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 45px; 
+	justify-items: center; 
+	max-width: 80%;
+	margin: 0 auto;
+  }
+
+  #qrcoder {
+	text-align: center; 
+  }
+  #qr {
+	width: 500px;
+	height: 500px;
+	object-fit: cover; /* Ensures the image fits within the dimensions */
   }
 
   #contact {
@@ -212,5 +237,52 @@ body {
 #Like h1 {
     font-size: 28px; /* Adjust font size for better readability */
     margin-bottom: 20px;
-	direction: rtl; 
+}
+
+
+#spa {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: right; /
+	
+}
+
+#spa h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #003366;
+}
+
+#spa h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0055aa;
+}
+
+#spa p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+#spa ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+#spa ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+#spa ul li strong {
+    color: #003366;
+}
+
+#spa .divider {
+    border-top: 2px solid #726d6d;
+    margin: 30px 0;
 }
