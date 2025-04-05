@@ -174,14 +174,28 @@ body {
   }
 
   #qrcoder {
-	text-align: center; 
+	text-align: center;
+	padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
   }
 
   #qr {
-	width: 500px;
-	height: 500px;
-	object-fit: cover; 
-  }
+	width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#qr:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
 
  
   
@@ -244,11 +258,11 @@ body {
     display: flex;
     justify-content: center;
     margin: 10px auto;
-    padding: 10px;
+    padding: 20px;
     background-color: #f9f9f9;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 300px;
+    max-width: 600px;
 }
 
 #spa {
