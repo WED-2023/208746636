@@ -2,6 +2,20 @@
     font-family: 'Assistant', sans-serif;
 }
 
+hr {
+    border: none;
+    border-top: 4px solid #726d6d;
+    margin-top: 5px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 40px;
+    margin-bottom: 20px;
+}
 #menu {
     position: fixed;
     top: 0;
@@ -85,10 +99,6 @@ body {
     direction: rtl; 
 }
 
-.about-container h1 {
-    font-size: 40px;
-    margin-bottom: 20px;
-}
 
 .about-container p {
     font-size: 22px;
@@ -96,20 +106,7 @@ body {
     margin-bottom: 20px;
 }
 
-hr {
-    border: none;
-    border-top: 4px solid #726d6d;
-    margin-top: 5px;
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
 
-#photos h1 {
-	text-align: center;
-    font-size: 40px;
-    margin-bottom: 20px;
-}
 .photo-gallery {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -125,3 +122,95 @@ hr {
 	border-radius: 10px;
 	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
+
+  #contact {
+	text-align: center;
+	padding: 40px 20px;
+	background-color: #f9f9f9;
+  }
+  
+  
+  #contact form ul {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 700px;
+  }
+  
+  #contact form li {
+	margin-bottom: 20px;
+  }
+  
+#contact input[type="text"],
+#contact input[type="email"] {
+  width: 100%; 
+  max-width: 600px; 
+  padding: 20px; 
+  font-size: 20px; 
+  margin: 15px auto; 
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+  #contact textarea {
+	width: 100%;
+	max-width: 600px; 
+	height: 200px; 
+	padding: 5px;
+	font-size: 16px;
+	margin: 15px auto;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	resize: vertical;
+	box-sizing: border-box;
+  }
+  
+  .rating {
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+  }
+  
+  .rating label {
+	cursor: pointer;
+  }
+  
+  .rating input[type="radio"] {
+	display: none;
+  }
+  
+  .rating img {
+	height: 50px;
+	transition: transform 0.3s ease;
+  }
+  
+  .rating input[type="radio"]:checked + img {
+	transform: scale(1.1);
+  }
+  
+  #submit {
+	background-color: #003366;
+	color: white;
+	border: none;
+	padding: 12px 30px;
+	font-size: 18px;
+	border-radius: 5px;
+	cursor: pointer;
+  }
+  
+  #submit:hover {
+	background-color: #0055aa;
+  }
+
+#Like {
+    text-align: center; /* Center the content */
+    margin: 0 auto; /* Center the section horizontally */
+    padding: 20px; /* Add padding for spacing */
+}
+
+#Like h1 {
+    font-size: 28px; /* Adjust font size for better readability */
+    margin-bottom: 20px;
+	direction: rtl; 
+}
