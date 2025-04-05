@@ -11,13 +11,13 @@
   
     <div class="center menu-container">
       <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#photos">My Photos</a></li>
-        <li><a href="#playlist">My Playlist</a></li>
-        <li><a href="#like">Like</a></li>
-        <li><a href="#qrcoder">QR Code</a></li>
         <li><a href="#spa">Q&A</a></li>
         <li><a href="#contact">Contact Me</a></li>
+        <li><a href="#like">Like</a></li>
+        <li><a href="#qrcoder">QR Code</a></li>
+        <li><a href="#playlist">My Playlist</a></li>
+        <li><a href="#photos">My Photos</a></li>
+        <li><a href="#about">About Me</a></li>
       </ul>
     </div>
   
@@ -35,6 +35,8 @@
       אהרון גרינר, נולד ב-19.02.1944, בסיביר אשר ברוסיה במהלך הבריחה של הוריו מידי הנאצים. 
       הוריו לאה ושמעון, ילידי פולין אשר מרבית בני משפחתם נספו בשואה, הצליחו להימלט ולהקים משפחה. 
       בתחילת חייו במשך שנתיים גרו הוא והוריו במחנה פליטים כשאביו עבד בעבודות כפייה במכרה פחם.
+לאחר כשנתיים הם הורשו לעזוב וחזרו לאירופה, לא לפולין אלא לגמרניה שם רכזו את היהודים במחנות עלייה. 
+במהלך התקופה במחנות העלייה נולדה גם אחותו פנינה.
       לאחר כשנתיים הם הורשו לעזוב וחזרו לאירופה, לא לפולין אלא לגמרניה שם רכזו את היהודים במחנות עלייה. 
       במהלך התקופה במחנות העלייה נולדה גם אחותו פנינה.
     </p>
@@ -61,10 +63,11 @@
     </p>
 
     <p>
-      כיום מתגורר ביחד עם אישתו בגני עומר שזה כפר לגמלאיים עצמאים, שם הוא מעביר את זמנו בשחיות והליכות יום יומית ובחוגים המוצעים. 
+      כיום מתגורר ביחד עם אישתו בגני עומר שזה כפר לגמלאיים עצמאים, שם הוא מעביר את זמנו בשחיות והליכות יום יומית ובחוגים המוצעים.
     </p>
+
   </div>
-  
+
 </section>
 <hr> 
 <br/>
@@ -99,18 +102,24 @@
 </section>
 <hr>
 <section id="qrcoder" class="section">
-<h1>קוד ה-QR לאתר</h1>
-<img src="images/qr code.png" id="qr" class="pic">
-<br/>
-<br/>
-<br/>
+  <h1>קוד ה-QR לאתר</h1>
+  <img src="images/qr code.png" id="qr" alt="QR Code">
 </section>
+<hr>
+<section id="Like" class="section">
+  <h1> מה לא תפרגנו לסבא אהרון בלייק?</h1>
+  <div class="likearea">
+    <div class="like-message">
+    </div>
+    <button id="likeButton">👍 Like</button>
+    <p>Likes: <span id="likeCount">0</span></p>
+  </div>
+  <h3>מוזמנים גם לפרגן ברשתות</h3>
+  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"> </div>
+</section>
+<hr>
 
 <section id="spa" class="section">
-  <br/>
-  <br/>
-  <br/>
-
   <h2>שאלה 1:</h2>
   <p>שלושה הבדלים מרכזיים בין גרסאות ה-web השונות:</p>
   
@@ -135,7 +144,7 @@
     <li><strong>Web 3.0</strong> – הנתונים מבוזרים באמצעות טכנולוגיות כמו בלוקצ'יין, כך שהמשתמשים שומרים על שליטה מלאה במידע שלהם.</li>
   </ul>
 
-  <br/>
+  <div class="divider"></div>
 
   <h2>שאלה 2:</h2>
   <p>נבחר בתרחיש שימוש שבו משתמש מחפש באינטרנט מתכון להכנת עוגה מסוימת. נסקור את ההבדלים בין הרשתות בתרחיש זה:</p>
@@ -160,55 +169,34 @@
     <li><strong>Web 2.0</strong> – הפלטפורמות אוספות מידע על המשתמש (כגון חיפושים, אתרים שביקר בהם) ומעבירות אותו לפרסום מותאם אישית.</li>
     <li><strong>Web 3.0</strong> – המשתמש שומר על שליטה מלאה על הנתונים שלו. הוא יכול לבחור לשתף את תחומי העניין שלו, על מנת לקבל מתכונים מותאמים אישית, מבלי שהמידע יאגר או יועבר לגורמים מסחריים.</li>
   </ul>
-
 </section>
 
 <hr>
 <section id="contact" class="section">
-  <form action="#">
-    <ul>
-      <h1>יצירת קשר</h1>
-      <li>
-        <input id="name" placeholder="Full name">
-        <input id="email" placeholder=" Email">
-        
-      </li>
-      <li>
-        <div class="rating">
-          <input type="radio" name="star" id="star1" checked="">
-          <label for="star1">
-            <img src="images/bad_rate.jpeg">
-          </label>
-          <input type="radio" name="star" id="star2">
-          <label for="star2">
-            <img src="images/middle_rate.jpeg">
-          </label>
-          <input type="radio" name="star" id="star3">
-          <label for="star3">
-            <img src="images/good_rate.jpeg">
-          </label>
-        </div>
-      </li>
-      <li>
-        <textarea id="message" placeholder="Your message"></textarea>
-      </li>
-      <li>
-        <input type="submit" value="Send message" id="submit">
-      </li>
-    </ul>
+  <h1>יצירת קשר</h1>
+  <form class="contact-form">
+    <input type="text" name="Name" placeholder="שם מלא" required>
+    <input type="email" name="Email" placeholder="כתובת מייל" required>
+    <textarea id="message" name="Message" rows="6" placeholder="תכתוב את ההודעה כאן" required></textarea>
+
+    <div class="emoji-list">
+      <span class="emoji" data-emoji="😁">😁</span>
+      <span class="emoji" data-emoji="❤️">❤️</span>
+      <span class="emoji" data-emoji="🔥">🔥</span>
+      <span class="emoji" data-emoji="🏆">🏆</span>
+      <span class="emoji" data-emoji="🤔">🤔</span>
+      
+    </div>
+
+    <button type="submit">Send Message</button>
+
   </form>
 </section>
 
-<hr>
-<br/>
-<section id="Like" class="section">
-  <h1> מה לא תפרגנו לסבא אהרון בלייק?</h1>
-  <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="" data-action="" data-size="" data-share="true"> </div>
-  <br/>
-  <br/>
-  <br/>
-</section>
 
+<br/>
+<br/>
+<br/>
 
 <script type="text/javascript">
 $(function(){
@@ -223,7 +211,21 @@ $(function(){
  $(document).scroll(function() {
     $('#menu').toggle($(this).scrollTop()>1000)
  });​
- </script>
+</script>
+<script type="text/javascript">
+  document.querySelectorAll('.emoji').forEach(emoji => {
+    emoji.addEventListener('click', function () {
+      const messageBox = document.getElementById('message');
+      messageBox.value += this.dataset.emoji; // Append the emoji to the message box
+    });
+  });
+
+  let likeCount = 0;
+  document.getElementById('likeButton').addEventListener('click', function () {
+    likeCount++;
+    document.getElementById('likeCount').textContent = likeCount;
+  });
+</script>
  <div id="fb-root"></div>
  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"></script>
 </body>
