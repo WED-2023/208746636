@@ -381,7 +381,7 @@ body {
 
   .emoji-list {
 	display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr)); /* Adjust columns for two rows */
+	grid-template-columns: repeat(5, 1fr); 
     gap: 15px;
     justify-content: center;
     margin-bottom: 20px;
